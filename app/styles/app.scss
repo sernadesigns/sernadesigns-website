@@ -1,27 +1,15 @@
 @import 'tailwind';
 
-body {
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background: url('/assets/images/subtlenet2.png') repeat;
-}
+@import 'ember-cli-bootstrap-4/bootstrap';
 
-header {
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: white;
-}
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/helpers';
 
-footer {
-	width: 100%;
-	padding: 1.5rem 1rem;
-	display: flex;
-	justify-content: center;
-	color: white;
-	background-color: #f7941e;
-}
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/buttons';
+
+@import 'layout/footer';
+@import 'layout/sections';

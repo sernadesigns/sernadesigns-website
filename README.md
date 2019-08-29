@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.0.0
+- Replaces basic ember app with customized Simplefolio ember app
+
 ### 0.1.0
 - Initial commit
 

@@ -26,8 +26,12 @@ const optionProps = [
 ];
 
 export default Component.extend({
-	tagName: 'div',
 	attributeBindings: ['data-tilt'],
+
+	init() {
+		this._super(...arguments);
+		this.options = {};
+	},
 
 	didReceiveAttrs() {
 		this._setDefaults();
@@ -61,11 +65,8 @@ export default Component.extend({
 	gyroscopeSamples: 10,
 
 	_setDefaults() {
-		let options = {};
 		optionProps.forEach(option => {
-			options[option] = this[option];
+			this.options[option] = this[option];
 		});
-
-		this.options = options;
 	}
 });

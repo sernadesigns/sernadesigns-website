@@ -27,10 +27,9 @@ const optionProps = [
 ];
 
 export default Component.extend({
-	tagName: 'div',
-
 	init() {
 		this._super(...arguments);
+		this.options = {};
 		
 		ScrollReveal({ reset: false });
 	},
@@ -79,11 +78,8 @@ export default Component.extend({
 	beforeReveal() {},
 
 	_setDefaults() {
-		let options = {};
 		optionProps.forEach(option => {
-			options[option] = this[option];
+			this.options[option] = this[option];
 		});
-
-		this.options = options;
 	}
 });

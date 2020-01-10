@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.1.0
+- Adds Offline experience
+
 ### 1.0.0
 - Replaces basic ember app with customized Simplefolio ember app
 

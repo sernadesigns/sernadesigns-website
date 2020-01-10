@@ -10,7 +10,10 @@ module.exports = function(defaults) {
 		},
 		SRI: {
 			enabled: false
-		}
+		},
+		'ember-service-worker': {
+      registrationStrategy: 'inline'
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

@@ -5,6 +5,10 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.2.0
+- Installs `ember-web-app`
+- Sets up basic **manifest.js**
+
 ### 1.1.0
 - Adds Offline experience
 

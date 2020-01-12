@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'serna-designs',
     environment,
-    rootURL: '/',
+		rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -19,7 +19,8 @@ module.exports = function(environment) {
 
     APP: {
       // Here you can pass flags/options to your application instance
-      // when it is created
+			// when it is created
+			rootElement: '#sd-app-container',
 		},
 		
 		fontawesome: {
@@ -64,7 +65,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+		// here you can enable a production-specific feature
   }
 
   return ENV;

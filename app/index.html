@@ -26,16 +26,19 @@
 		<link rel="dns-prefetch" href="//fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 		
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/serna-designs.css">
+		<link rel="preload" href="{{rootURL}}assets/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="{{rootURL}}assets/vendor.css"></noscript>
+		<link rel="stylesheet" href="{{rootURL}}assets/serna-designs.css">
 
     {{content-for "head-footer"}}
   </head>
   <body class="text-center">
-    {{content-for "body"}}
-
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/serna-designs.js"></script>
+		{{content-for "body"}}
+		
+		<div id="sd-app-container"></div>
+		
+		<script src="{{rootURL}}assets/vendor.js"></script>
+    <script async src="{{rootURL}}assets/serna-designs.js"></script>
 
     {{content-for "body-footer"}}
   </body>

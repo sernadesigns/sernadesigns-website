@@ -5,6 +5,10 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.3.0
+- Adds application rootElement
+- Updates **index.html** for performance
+
 ### 1.2.0
 - Installs `ember-web-app`
 - Sets up basic **manifest.js**

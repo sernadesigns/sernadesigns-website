@@ -1,12 +1,13 @@
-import Component from '@ember/component';
+import classic from 'ember-classic-decorator';
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
 import jump from 'jump.js';
 
-export default Component.extend({
-	tagName: 'a',
-	attributeBindings: ['href'],
-
-	click(e) {
+@classic
+export default class JumpScroll extends Component {
+	@action
+  handleClick(e) {
 		e.preventDefault();
-		jump(this.href);
+		jump(this.args.href);
 	}
-});
+}

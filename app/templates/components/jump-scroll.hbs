@@ -1,5 +1,11 @@
-{{#if (has-block)}}
-	{{yield}}
-{{else}}
-	{{@text}}
-{{/if}}
+<a
+	href="{{@href}}"
+	{{on 'click' this.handleClick}}
+	...attributes
+>
+	{{#if (has-block)}}
+		{{yield}}
+	{{else}}
+		{{@text}}
+	{{/if}}
+</a>

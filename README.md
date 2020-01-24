@@ -5,6 +5,17 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.1
+- Octanifies applications
+- Adds native classes
+- Adds Glimmmer component
+
+### 1.4.0
+- Updates `ember-cli` to 3.15.1 "Octane Edition"
+
+### 1.3.1
+- Updates `yarn.lock` file
+
 ### 1.3.0
 - Adds application rootElement
 - Updates **index.html** for performance

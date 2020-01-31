@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.2
+- More Octane updates
+
 ### 1.4.1
 - Octanifies applications
 - Adds native classes

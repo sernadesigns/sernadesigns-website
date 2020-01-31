@@ -7,9 +7,10 @@ const browsers = [
   'last 2 Safari versions'
 ];
 
-const isFallback = process.env.BUILD_TARGET === 'LEGACY';
+const isCI = !!process.env.CI;
+const isProduction = process.env.EMBER_ENV === 'production';
 
-if (isFallback) {
+if (isCI || isProduction) {
   browsers.push('ie 11');
 }
 

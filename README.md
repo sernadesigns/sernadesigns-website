@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.3
+- Updates packages to fix test runner issue
+
 ### 1.4.2
 - More Octane updates
 

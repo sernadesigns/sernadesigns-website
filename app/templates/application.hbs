@@ -30,11 +30,7 @@
 			@delay={{1000}}
 			@origin={{@leftToBottom}}
 		>
-			<JumpScroll
-				class="cta-btn cta-btn--hero"
-				@href="#about"
-				@text="Learn more"
-			/>
+			<a class="cta-btn cta-btn--hero" href="#about" {{jumpscroll}}>Learn more</a>
 		</ScrollReveal>
 	</div>
 </div>
@@ -296,13 +292,10 @@
 {{!-- **** Footer Section **** --}}
 <footer class="footer navbar-static-bottom">
 	<div class="container">
-		<JumpScroll
-			class="back-to-top"
-			@href="#top"
-		>
+		<a class="back-to-top" href="#top" {{jumpscroll}}>
 			<span class="sr-only">Back to top</span>
 			{{fa-icon "angle-up" class="pointer-events-none" prefix="fas" size="2x"}}
-		</JumpScroll>
+		</a>
 		{{!-- Social Links --}}
 		<div class="social-links">
 			<a href="https://twitter.com/MichaelSerna22" rel="noopener noreferrer" target="_blank" aria-label="Follow me on Twitter">

@@ -5,6 +5,10 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.4
+- Replaces jump-scroll component with jumpscroll modifier
+- Adds data util to clean up application template
+
 ### 1.4.3
 - Updates packages to fix test runner issue
 

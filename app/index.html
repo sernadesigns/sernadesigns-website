@@ -18,7 +18,18 @@
 		<!-- Add your custom Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{rootURL}}assets/sernadesigns.ico" />
 
-    {{content-for "head"}}
+		{{content-for "head"}}
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70706574-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-70706574-1');
+		</script>
+
 
     <link rel="manifest" href="{{rootURL}}manifest.webmanifest">
     <meta name="msapplication-config" content="{{rootURL}}browserconfig.xml">

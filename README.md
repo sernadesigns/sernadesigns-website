@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.7
+- Adds Google Optimize tracking snippet
+
 ### 1.4.6
 - Adds `gtag` tracking snippet
 

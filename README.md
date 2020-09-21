@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.6
+- Adds `gtag` tracking snippet
+
 ### 1.4.5
 - Upgrades ember to 3.20 LTS
 - Adds tests

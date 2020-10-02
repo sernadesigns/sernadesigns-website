@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.9
+- Updated copyright text to computed property
+
 ### 1.4.8
 - Replaces gtag and go tracking snippets with gtm tracking snippet
 

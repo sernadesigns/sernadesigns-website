@@ -1,7 +1,8 @@
+import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
-import Controller from '@ember/controller';
-import { projects, socials } from '../utils/data';
+import { htmlSafe } from '@ember/template';
+import { projects, socials } from 'serna-designs/utils/data';
 
 export default class ApplicationController extends Controller {
 	@service
@@ -11,6 +12,11 @@ export default class ApplicationController extends Controller {
 		super(...arguments);
 		this.projects = projects;
 		this.socials = socials;
+	}
+
+	@computed
+	get copyrightText() {
+		return htmlSafe(`&copy; 2011-${new Date().getFullYear()} SernaDesigns Web Development`);
 	}
 
 	@computed('media.isDesktop')

@@ -5,6 +5,9 @@ A short introduction of this app could easily go here.
 
 ## Changelog
 
+### 1.4.8
+- Replaces gtag and go tracking snippets with gtm tracking snippet
+
 ### 1.4.7
 - Adds Google Optimize tracking snippet
 

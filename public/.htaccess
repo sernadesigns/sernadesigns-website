@@ -1,0 +1,28 @@
+# -FrontPage-
+
+IndexIgnore */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName sernadesigns.com
+AuthUserFile /home/sdesigns/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/sdesigns/public_html/_vti_pvt/service.grp
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^sernadesigns\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.sernadesigns\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ "https\:\/\/sernadesigns\.com\/$1" [R=301,L]
+
+Header set Content-Security-Policy "default-src 'self'; frame-src 'self' https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com; font-src 'self' https://fonts.gstatic.com; object-src 'none';"

@@ -47,7 +47,7 @@ module.exports = function(environment) {
 		
 		ENV['ember-a11y-testing'] = {
 			componentOptions: {
-				turnAuditOff: true
+				turnAuditOff: false
 			}
 		}
   }
